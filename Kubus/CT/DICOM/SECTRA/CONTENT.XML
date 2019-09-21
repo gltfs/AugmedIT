@@ -1,0 +1,1201 @@
+<?xml version="1.0"?>
+<content>
+  <session>
+    <date>15-1-2018</date>
+    <time>16:14</time>
+    <workstation>
+      <version>17.3.6.1872</version>
+    </workstation>
+    <institution_data>
+      <name>UMC Utrecht</name>
+      <location />
+      <disclaimer />
+    </institution_data>
+  </session>
+  <patient id="0000786A">
+    <patient_data>
+      <personal_id>6000386</personal_id>
+      <name>Wetenschap Ct, W.</name>
+      <birthdate>1-1-1890</birthdate>
+      <birthdate_invariant>01/01/1890</birthdate_invariant>
+      <sex>M</sex>
+    </patient_data>
+    <request id="AAAB3712">
+      <request_data>
+        <id>6518129</id>
+        <referring_unit>RAD, Kwaliteitstesten Apparatuur</referring_unit>
+        <referring_physician>KWALITEITSTESTEN APPARATUUR RADIOLOGIE (RAD)</referring_physician>
+        <question>Indicatie: .</question>
+        <case_history>Klinische gegevens: fantoom scannen Nils Indicatie: . 
+ Protocol: Geen protocol bekend</case_history>
+      </request_data>
+      <study id="AA7CDFA3">
+        <study_data>
+          <datetime>15-1-2018 16:09</datetime>
+          <utc_datetime>01/15/2018 15:09:32</utc_datetime>
+          <description>CT WETENSCHAP (30 MIN)</description>
+          <accession_id>6518129</accession_id>
+          <exam_id>11844373</exam_id>
+          <body_part>CT WETENSCHAP...</body_part>
+          <modality>CT</modality>
+          <instance_uid>1.3.46.670589.33.1.63651629363637138700001.5145340782800986951</instance_uid>
+        </study_data>
+        <series id="00002F20">
+          <series_data>
+            <modality>CT</modality>
+            <number>2</number>
+            <description>Exam Summary</description>
+          </series_data>
+          <thumbnail id="00009B92">
+            <src>../IHE_PDI\0000786A\AAAB3712\AA7CDFA3\00002F20\THUMNAIL.JPG</src>
+          </thumbnail>
+          <image id="EE5B4C0B">
+            <datetime>15-1-2018 16:11:57</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:57</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00002F20\EE5B4C0B</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEE71BB9">
+            <datetime>15-1-2018 16:10:35</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:10:35</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00002F20\EEE71BB9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+        </series>
+        <series id="00007DA6">
+          <series_data>
+            <modality>CT</modality>
+            <number>122</number>
+            <description>NAV.</description>
+          </series_data>
+          <thumbnail id="0000BFBB">
+            <src>../IHE_PDI\0000786A\AAAB3712\AA7CDFA3\00007DA6\THUMNAIL.JPG</src>
+          </thumbnail>
+          <image id="EED58C03">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EED58C03</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE3D46A4">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE3D46A4</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECDF711">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECDF711</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE7BF202">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE7BF202</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECEA679">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECEA679</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE125362">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE125362</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEF83B21">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEF83B21</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEB842E2">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEB842E2</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEB4D4C6">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEB4D4C6</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE4544E0">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE4544E0</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE73DB3D">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE73DB3D</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0735A4">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0735A4</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE23B42C">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE23B42C</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEBA4BA5">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEBA4BA5</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE6F2605">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE6F2605</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEBA5478">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEBA5478</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE9E256F">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE9E256F</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE604263">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE604263</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE171AD1">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE171AD1</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE4CF910">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE4CF910</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECF0EFF">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECF0EFF</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE9858F9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE9858F9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE25F917">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE25F917</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEC28479">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEC28479</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE189B7D">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE189B7D</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE86C14E">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE86C14E</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEDD2143">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEDD2143</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0B1D10">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0B1D10</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE015886">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE015886</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE060B48">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE060B48</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE12F1DA">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE12F1DA</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE2BC965">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE2BC965</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECE0B25">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECE0B25</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE569EB0">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE569EB0</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE75081B">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE75081B</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE4AA441">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE4AA441</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE7CEEC9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE7CEEC9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE2964AE">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE2964AE</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE077227">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE077227</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE65EBB3">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE65EBB3</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE983CF9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE983CF9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECC8B24">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECC8B24</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE688619">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE688619</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE78FB55">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE78FB55</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEC1D6E1">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEC1D6E1</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE6D9E8F">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE6D9E8F</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0F3457">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0F3457</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE414583">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE414583</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE60F701">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE60F701</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE92921D">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE92921D</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEC1331A">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEC1331A</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE5378B8">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE5378B8</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEBA9BE1">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEBA9BE1</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE819395">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE819395</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE4379F8">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE4379F8</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE5AA8CA">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE5AA8CA</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECB9903">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECB9903</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EED22E52">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EED22E52</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEE42791">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEE42791</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEE834FD">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEE834FD</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEE85CEA">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEE85CEA</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEF8CD3D">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEF8CD3D</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEA87960">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEA87960</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE80F8F4">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE80F8F4</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE257389">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE257389</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE8E9643">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE8E9643</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEC655E8">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEC655E8</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE1FCB8B">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE1FCB8B</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE69F653">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE69F653</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EED29229">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EED29229</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE36A900">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE36A900</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE5789A3">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE5789A3</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0DF066">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0DF066</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEED61B6">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEED61B6</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE48DF5A">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE48DF5A</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE94CC12">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE94CC12</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEE91BE6">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEE91BE6</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE4CD150">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE4CD150</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0C281A">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0C281A</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE2B1EDF">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE2B1EDF</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE174A78">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE174A78</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE451C35">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE451C35</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEFFA238">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEFFA238</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEB16544">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEB16544</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE130BDE">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE130BDE</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE716EA9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE716EA9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECD2253">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECD2253</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEB54B1A">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEB54B1A</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE3F7F81">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE3F7F81</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE5B34DA">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE5B34DA</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE8F5A05">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE8F5A05</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE743B16">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE743B16</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE1718F7">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE1718F7</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE24C182">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE24C182</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE5E9F78">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE5E9F78</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEF3CD4C">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEF3CD4C</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE6EAEF9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE6EAEF9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE00F3A9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE00F3A9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE07F532">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE07F532</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE45F652">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE45F652</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE9E0B71">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE9E0B71</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EECAA8C7">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EECAA8C7</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE5136F0">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE5136F0</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEDABDB8">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEDABDB8</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEBBD8C2">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEBBD8C2</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE89FB05">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE89FB05</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE65DB9E">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE65DB9E</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0C4B62">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0C4B62</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE1628A6">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE1628A6</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE44A022">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE44A022</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEAA74BF">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEAA74BF</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0152C9">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0152C9</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE68B4CD">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE68B4CD</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE996820">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE996820</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE0E8A09">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE0E8A09</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE4DB588">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE4DB588</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEBF3E78">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEBF3E78</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE6F4934">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE6F4934</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE6723F5">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE6723F5</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EEA70C59">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EEA70C59</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE05DC98">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE05DC98</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+          <image id="EE00B554">
+            <datetime>15-1-2018 16:11:12</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:11:12</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\00007DA6\EE00B554</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+        </series>
+        <series id="0000DEB9">
+          <series_data>
+            <modality>CT</modality>
+            <number>1</number>
+            <description>SV</description>
+          </series_data>
+          <thumbnail id="00002FE0">
+            <src>../IHE_PDI\0000786A\AAAB3712\AA7CDFA3\0000DEB9\THUMNAIL.JPG</src>
+          </thumbnail>
+          <image id="EE2C12FE">
+            <datetime>15-1-2018 16:10:35</datetime>
+            <utc_date>01/14/2018</utc_date>
+            <utc_time>15:10:35</utc_time>
+            <dicom_file>
+              <src>../DICOM\0000786A\AAAB3712\AA7CDFA3\0000DEB9\EE2C12FE</src>
+              <index>0</index>
+            </dicom_file>
+          </image>
+        </series>
+      </study>
+    </request>
+  </patient>
+</content>

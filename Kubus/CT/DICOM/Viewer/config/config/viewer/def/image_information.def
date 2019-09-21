@@ -1,0 +1,679 @@
+#
+# Configuration file for image information displayed in the DICOM viewer.
+#
+# Do not change files in the config/config directory. These are default template files.
+# If you want to edit a configuration file, copy the default template file from the config/config
+# directory to the config/local_config directory and modify the file copy.
+#
+# Please note that it is required to test any configuration changes. This is done by:
+#
+# 1. Export an examination and the DICOM viewer to a disk location.  
+# 2. Run the viewer from the disk location and verify that the changes have taken effect.
+#
+# If the viewer doesn't start properly it is likely that the changes to the configuration 
+# file were made incorrectly.
+# To remedy such problems, remove the modified file from the config/local_config directory.
+#
+# If the default template files are corrupted, remove the entire config directory 
+# including sub folders "config" and "local_config". 
+# The folder structure will be re-created during the next export from IDS7.
+# 
+
+#
+# "Modality_switch" determines what field(s) to look at to determine 
+# what modality information blocks to apply. The datastring should contain 
+# a DICOM tag and the value of that tag in the image file will be used as 
+# modality identification.
+# If the datastring is empty the subtags of the node are searched in
+# numerical order. Each subtag should then contain a dicom tag (as above)
+# and the first one that has a corresponding value in the file is used.
+#
+# "Grey_level" specifies the grey level of displayed image info.
+# 0 means black and 255 is white. Default value is 255.
+#
+# "Max_fontsize" specifies how large a selected font (see below for defining
+# Font, Fontsize and Fontstyle) can be when displayed in the image views.
+# Default value is 40 pixels.
+#
+# "Font" is the name of the font family to use.
+#
+# "Fontsize" can be one of "small", "medium" or "large". The actual size 
+# used will be determined dynamically depending on displayed image size
+# and Max_fontsize.
+#
+# "Fontstyle" can be one of "normal", "slanted", "bold" or "bold-slanted"
+#
+# "Format" determines the actual format that will be printed by an element
+# (an element is one row of information). The data string of "Format" is 
+# printed verbatim, but keywords within "[]" will be looked up in the
+# "Data" subtag for the same element. The actual letters "[" and "]" may 
+# be inserted by quoting them with "\"The keywords may also contain up to
+# four formatting directions, separated with commas. The directione are:
+#
+#      1. printf-style escape sequence for the value. If this is missing
+#         or empty it defaults to %s (a string). If the direction is NOT %s
+#         all the following directions are ignored.
+#      2. skip-list, a string containing charaters that will be treated 
+#         as non-existent by the following directions.
+#      3. record-separator, a string with characters that will be used 
+#         as seperator between fields in the value string. 
+#         If this is empty each character in the string will be treated 
+#         as a separate record.
+#      4. value-format, again a format string that will be used verbatim, but
+#         sequences in the form $(n) (n is a number, starting at 1) will be 
+#         replaced by the corresponding field from the string. If n is 
+#         negative, the field number is counted from the end of the string, 
+#         eg $(-1) is the last field. The "$" charcter itself can be inserted 
+#         by the sequence "$$". $(0) is the complete data unformatted. $(-0) 
+#         is the complete data but with the skiplist applied.
+#
+# "Data" should contain the keywords from "Format" as subtags. Each subtag
+# should indicate in its datastring where to get the information. It can
+# be one of the following:
+#
+#   - a DICOM tag on the form [group, element], numbers are in hexadecimal.
+#   - a dynamic value from the image pipeline, one of:
+#         %window_center       (float)
+#         %window_width        (float)
+#         %window_upper	       (float)
+#         %window_lower	       (float)	  
+#         %zoom                (float)
+#         %orientation         (string: TL, TR, BL, BR, LT, LB, RT, RB. 
+#                               First letter is image side on top,
+#                               second is image side to the left.)
+#         %current_image       (integer)
+#         %number_of_images    (integer)
+#         %sync_group          (integer)
+#         %compression         (float)
+#         %view_width          (integer: for test purposes)
+#         %view_height         (integer: for test purposes)
+#         %resampled           (string:  for test purposes)
+#         %image_width         (integer: for test purposes)
+#         %image_height        (integer: for test purposes)
+#         %image_bytes         (integer: for test purposes)
+#         %compression_percent (float:   for test purposes)
+#         %compression_layers  (integer: for test purposes)
+#         %compression_bytes   (integer: for test purposes)
+#   - a WISE folder attribute, preceded by a $ sign
+#
+# If a specified datasource has no value, it will be ignored.
+# It is possible to specify alternative datasources in a way similar to
+# the modality switch above. In that case no datastring should be specified
+# and the subtags will be searched in numerical order until one that
+# specifies a valid datasource is found. THIS WILL ONLY WORK FOR STRING DATA!
+#
+# Sometimes a datasource contains an enumerated value and then one usually
+# wants to print a certain string depending on what the value was. This 
+# is done by specifying a datasource in a "Data" tag and also a number of 
+# subtags (numerical). each subtag should have two entries, one "Tag" with the
+# enumerated value and another, "Data" which contains the string to be printed
+# if the "Tag" data matches the original data. In the case of alternate
+# datasources described previously, this value lookup can be applied on each
+# of the alternative suptags.
+#
+# "Level" is used to determine which display level a certain info element has.
+# The level is used when selecting image info level from within IDS5. The 
+# "Maximum image info" command will set display level to 10, causing all
+# elements defined with a level of 10 or less to be displayed. The 
+# "Minimal image info" command in IDS5 will set display level to 0. If no 
+# level is defined for an element, the level will be automatically set to 0.
+# This means that it will be displayed even if "Minimal image info" is 
+# selected. If "Anonymized image info" is selected however, display level is 
+# set to -1 which will hide all image information that has not been explicitly 
+# defined as level -1 or less.
+#
+
+
+Image_info {
+
+    # Defines grey level of displayed image info
+    Grey_level <255> # 0 = Black, 255 = White
+
+    # Defines max fontsize in the image views
+    Max_fontsize <40>
+
+    Modality_switch <[8,60,CS]>
+
+    #
+    # Defaults for all modalities
+    #
+    * {
+
+        Calipers {
+#            Left <>
+            Right <>
+#            Top <>
+            Bottom <>
+            Length <5>   # Length is in cm
+        }
+
+        Show_orientation <[20,20,CS]> {
+            Font <helvetica>
+            Fontsize <medium>
+            Fontstyle <bold>
+        }
+
+	
+        Default_display_level <10>
+
+        #
+        # Defaults for all information blocks
+        #
+        * {
+            Elements {
+
+                #
+                # Defaults for all elements
+                #
+                * {
+                    Font <helvetica>
+                    Fontsize <medium>
+                    Fontstyle <normal>
+                    Format <[data]>
+                }
+            }
+        }
+
+        #
+        # Upper left block
+        #
+        UL {
+            Alignment <left>
+            Elements {
+                1 {
+                    Fontsize <medium>
+                    Format <[name]>
+                    Data {
+                        name <$patient_name>
+                    }
+                }
+                2 {
+                    Fontsize <medium>
+                    Format <[id]>
+                    Data {
+                        id <$patient_personal_id>
+                    }
+                }
+            }
+        } 
+
+        #
+        # Upper right block
+        #
+        UR {
+            Alignment <right>
+            Elements {
+                1 {
+                    Format <C: [center,%7.1f], W: [width,%7.1f]>
+                    Data {
+                        center <%window_center>
+                        width <%window_width>
+                    }
+                }
+# Uncomment the following lines to display the exact compression factor.
+#                2 {
+#                    Format <Compression: 1:[compression,%.0f]>
+#                    Data {
+#                        compression <%compression>
+#                    }
+#                }
+            }
+        }
+
+        #
+        # Lower left block
+        #
+        LL {
+            Alignment <left>
+            Elements {
+                1 {
+                    Fontsize <large>
+                    Fontstyle <bold>
+                    Format <[date,,.,,$(0)], [time,,:,,$(1)$(2):$(3)$(4)]>
+                    Data {
+                        date {
+                            1 <[8,23,DA]>
+                            2 <[8,22,DA]>
+                            3 <[8,21,DA]>
+                            4 <[8,20,DA]>
+                        }
+                        time {
+                            1 <[8,33,TM]>
+                            2 <[8,32,TM]>
+                            3 <[8,31,TM]>
+                            4 <[8,30,TM]>
+                        }
+                    }
+                }
+            }
+        }
+        #
+        # Lower right block
+        #
+        LR {
+            Alignment <right>
+            Elements {
+                1 {
+                    Fontsize <large>
+                    Fontstyle <bold>
+                    Format <[pos_label,%s]>
+                    Data {
+                        pos_label <$collection_pos_label>
+                    }
+                }
+            }
+        } 
+    }
+    CT {
+        Calipers {
+            Bottom <>
+            Length <5>   # Length is in cm
+        }
+        UL {
+            Elements {
+                1 <>  # Placeholders for default values
+                2 <>
+                3 {
+                    Level <5>
+                    Format <Contrast: [contrast]>
+                    Data {
+                        contrast <[18,10,LO]>
+                    }
+                }
+                4 {
+                    Level <5>
+                    Format <Gantry: [gantry,%g]°>
+                    Data {
+                        gantry <[18,1120,DS]>
+                    }
+                }
+                5 {
+                    Level <5>
+                    Format <FoV: [fov,%g] mm>
+                    Data {
+                        fov <[18,1100,DS]>
+                    }
+                }
+                6 {
+                    Level <5>
+                    Format <Time: [time,%d] ms>
+                    Data {
+                        time <[18,1150,IS]>
+                    }
+                }
+                7 {
+                    Level <5>
+                    Format <Slice: [slice,%g] mm>
+                    Data {
+                        slice <[18,50,DS]>
+                    }
+                }
+                8 {
+                    Level <5>
+                    Format <Pos: [pos,%g]>
+                    Data {
+                        pos <[20,1041,DS]>
+                    }
+                }
+                9 {
+                    Level <5>
+                    Format <[pat_pos]>
+                    Data {
+                        pat_pos <[18,5100,CS]>
+                    }
+                }
+            }
+        }
+        LL {
+            Elements {
+                1 <>
+                2 {
+                    Level <5>
+                    Format <Image [cur_image,%d] of [num_images,%d]>
+                    Data {
+                        cur_image <%current_image>
+                        num_images <%number_of_images>
+                    }
+                }
+                3 {
+                    Level <5>
+                    Format <Image no: [image,%d]>
+                    Data {
+                        image <[20,13,IS]>
+                    }
+                }
+                4 {
+                    Level <5>
+                    Format <[kvp,%g] kV>
+                    Data {
+                        kvp <[18,60,DS]>
+                    }
+                }
+                5 {
+                    Level <5>
+                    Format <[ma,%d] mA>
+                    Data {
+                        ma <[18,1151,IS]>
+                    }
+                }
+                6 {
+                    Level <5>
+                    Format <F: [filter]>
+                    Data {
+                        filter <[18,1210,SH]>
+                    }
+                }
+            }
+        }
+    }
+    MR {
+        Calipers {
+            Bottom <>
+            Length <5>   # Length is in cm
+        }
+        UL {
+            Elements {
+                1 <>  # Placeholders for default values
+                2 <>
+                3 {
+                    Level <5>
+                    Format <Seq: [seq_name]>
+                    Data {
+                        seq_name {
+                            1 <[18,24,SH]>
+                            2 <[18,20,CS]>
+                        }
+                    }
+                }
+                4 {
+                    Level <5>
+                    Format <Slice: [slice,%g] mm>
+                    Data {
+                        slice <[18,50,DS]>
+                    }
+                }
+                5 {
+                    Level <5>
+                    Format <Pos: [pos,%g]>
+                    Data {
+                        pos <[20,1041,DS]>
+                    }
+                }
+                6 {
+                    Level <5>
+                    Format <TR: [rep_time,%g]>
+                    Data {
+                        rep_time <[18,80,DS]>
+                    }
+                }
+                7 {
+                    Level <5>
+                    Format <TE: [echo_time,%g]>
+                    Data {
+                        echo_time <[18,81,DS]>
+                    }
+                }
+                8 {
+                    Level <5>
+                    Format <AC: [num_avg,%g]>
+                    Data {
+                        num_avg <[18,83,DS]>
+                    }
+                }
+            }
+        }
+        LL {
+            Elements {
+                1 <>
+                2 {
+                    Level <5>
+                    Format <Image [cur_image,%d] of [num_images,%d]>
+                    Data {
+                        cur_image <%current_image>
+                        num_images <%number_of_images>
+                    }
+                }
+                3 {
+                    Level <5>
+                    Format <Image no: [image,%d]>
+                    Data {
+                        image <[20,13,IS]>
+                    }
+                }
+                4 {
+                    Level <5>
+                    Format <FoV: [fov,%g] mm>
+                    Data {
+                        fov <[18,1100,DS]>
+                    }
+                }
+                5 {
+                    Level <5>
+                    Format <[pat_pos]>
+                    Data {
+                        pat_pos <[18,5100,CS]>
+                    }
+                }
+            }
+        }
+    }
+    MG {
+        # The info blocks are flipped left-right if 
+	# the DICOM tag (0020,0062) has the value L
+	Block_flip_lr_switch <[20,62,CS]>
+	Block_flip_lr_value <L>
+        UL {
+            Alignment <left>
+            Elements {
+                1 {
+                    Fontsize <small>
+		    Format <C: [center,%7.1f], W: [width,%7.1f]>
+		    Data {
+                        center <%window_center>
+                        width <%window_width>
+                    }
+                }
+                2 {
+                    Fontsize <small>
+                    Format <[name]>
+                    Data {
+                        name <$patient_name>
+                    }
+                }
+                3 {
+                    Fontsize <small>
+                    Format <[id]>
+                    Data {
+                        id <$patient_personal_id>
+                    }
+                }
+# Uncomment the following lines to display the exact compression factor.
+#               4 {
+#                   Fontsize <small>
+#                   Format <Compression: 1:[compression,%.0f]>
+#                   Data {
+#                       compression <%compression>
+#                   }
+#               }
+	    }
+        }
+	UR {
+            Elements {
+	    }
+	}
+        LL {
+            Alignment <left>
+            Elements {
+                1 {
+                    Fontsize <small>
+                    Fontstyle <bold>
+                    Format <[date,,.,,$(0)], [station_name]>
+                    Data {
+                        station_name <[8,1010,SH]>
+                        date {
+                            1 <[8,23,DA]>
+                            2 <[8,22,DA]>
+                            3 <[8,21,DA]>
+                            4 <[8,20,DA]>
+                        }
+                    }
+                }
+                2 {
+                    Fontsize <small>
+                    Format <[Thickness,%g]mm, Dose: [organ_dose,%.2g]dGy, [kV,%g]kV, [mAs,%d]mAs>
+                    Data {
+                        Thickness <[0018,11A0,DS]>
+                        organ_dose <[40,316,DS]>
+                        kV <[18,60,DS]>
+                        mAs <[18,1152,IS]>
+                    }
+                }
+                3 {
+                    Fontsize <small>
+                    Fontstyle <bold>
+                    Format <[image_laterality] [view_position] [spot_compression]>
+                    Data {
+                        image_laterality <[20,62,CS]>
+                        view_position <[19,1A1,SH]>
+			spot_compression <[19,1A2,SH]>
+                    }
+                }
+            }
+        }
+	LR {
+            Elements {
+	    }
+	}
+    }
+}
+
+
+#
+# Configuration of the bitmap bar in the image views, i.e. the small symbols
+# in the upper, right corner of the images.
+#
+bitmap_bar {
+    position <ur>
+    alignment <center>
+    bitmaps <quality1:quality2:quality3:quality4:stack:multiframe:collection:synch:tag:edge_enhance:ps_not_disp:ps:compressed:overlay_plugin:virtual_3d:crop_warning:rotate_90:rotate_180:rotate_270:flip_horizontal:flip_vertical:do_not_archive:zoomed:non_square>
+    stack {
+	sizes <18:24:32:48>
+	active <stack>
+	inactive <>
+    }
+    multiframe {
+        sizes <18:24:32:48>
+        active <multiframe>
+        inactive <>
+    }
+    collection {
+	sizes <18:24:32:48>
+	active <collection>
+	inactive <>
+    }
+    tag {
+	sizes <18:24:32:48>
+	active <tag>
+	inactive <>
+    }
+    synch {
+	sizes <18:24:32:48>
+	active <sync>
+	inactive <>
+    }
+    edge_enhance {
+	sizes <18:24:32:48>
+	active <edge_enhance>
+	inactive <>
+    }
+    ps_not_disp {
+	sizes <18:24:32:48>
+	active <ps_not_disp>
+	inactive <>
+    }
+    ps {
+	sizes <18:24:32:48>
+	active <ps>
+	inactive <>
+    }
+    compressed {
+	sizes <18:24:32:48>
+	active <compressed>
+	inactive <>
+    }
+    overlay_plugin {
+	sizes <18:24:32:48>
+	active <overlay_plugin>
+	inactive <>
+    }
+    virtual_3d {
+	sizes <18:24:32:48>
+	active <virtual_3d>
+	inactive <>
+    }
+    quality1 {
+	sizes <18:24:32:48>
+	active <quality1>
+	inactive <>
+    }
+    quality2 {
+	sizes <18:24:32:48>
+	active <quality2>
+	inactive <>
+    }
+    quality3 {
+	sizes <18:24:32:48>
+	active <quality3>
+	inactive <>
+    }
+    quality4 {
+	sizes <18:24:32:48>
+	active <quality4>
+	inactive <>
+    }
+    crop_warning {
+	sizes <18:24:32:48>
+ 	active <crop_warning>
+	inactive<>
+    }
+    rotate_90 {
+	sizes <18:24:32:48>
+	active <rotate_90>
+	inactive <>
+    }
+    rotate_180 {
+	sizes <18:24:32:48>
+	active <rotate_180>
+	inactive <>
+    }
+    rotate_270 {
+	sizes <18:24:32:48>
+	active <rotate_270>
+	inactive <>
+    }
+    flip_horizontal {
+	sizes <18:24:32:48>
+	active <flip_horizontal>
+	inactive <>
+    }
+    flip_vertical {
+	sizes <18:24:32:48>
+	active <flip_vertical>
+	inactive <>
+    }
+    do_not_archive {
+	sizes <18:24:32:48>
+	active <do_not_archive>
+	inactive <>
+    }
+    zoomed {
+	sizes <18:24:32:48>
+	active <zoomed>
+	inactive <>
+    }
+    non_square {
+	sizes <18:24:32:48>
+	active <non_square>
+	inactive <>
+    }
+}
