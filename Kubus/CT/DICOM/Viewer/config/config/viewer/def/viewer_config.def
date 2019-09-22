@@ -1,0 +1,636 @@
+#
+# Configuration file for general DICOM viewer settings.
+#
+# Do not change files in the config/config directory. These are default template files.
+# If you want to edit a configuration file, copy the default template file from the config/config
+# directory to the config/local_config directory and modify the file copy.
+#
+# Please note that it is required to test any configuration changes. This is done by:
+#
+# 1. Export an examination and the DICOM viewer to a disk location.  
+# 2. Run the viewer from the disk location and verify that the changes have taken effect.
+#
+# If the viewer doesn't start properly it is likely that the changes to the configuration 
+# file were made incorrectly.
+# To remedy such problems, remove the modified file from the config/local_config directory.
+#
+# If the default template files are corrupted, remove the entire config directory 
+# including sub folders "config" and "local_config". 
+# The folder structure will be re-created during the next export from IDS7.
+# 
+
+#
+# Font configuration.
+#
+
+Fonts {
+    * {
+        DefaultFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <normal>
+	    }
+        }
+        ToolbarFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <normal>
+	    }
+        }
+        PatientInfoFont {
+            Lowres {
+	        Family <Verdana>
+	        Size <16>
+	        Style <normal>
+	    }
+        }
+        AttributeControlFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <normal>
+            }
+        }
+        AttributeControlLabelFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <bold>
+            }
+        }
+        CineControlFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <normal>
+	    }
+        }
+        CineControlStrongFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <bold>
+            }
+        }
+        DialogFont {
+            Lowres {
+	        Family <MS Sans Serif>
+	        Size <8>
+	        Style <normal>
+            }
+        }
+    }
+    japanese {
+        DefaultFont {
+            Lowres {
+	        Family <MS UI Gothic>
+	        Size <12>
+	        Style <normal>
+	    }
+        }
+        ToolbarFont {
+            Lowres {
+	        Family <MS UI Gothic>
+	        Size <12>
+	        Style <normal>
+	    }
+        }
+        PatientInfoFont {
+            Lowres {
+	        Family <MS UI Gothic>
+	        Size <18>
+	        Style <bold>
+	    }
+        }
+        AttributeControlFont {
+            Lowres {
+	        Family <MS UI Gothic>
+	        Size <12>
+	        Style <normal>
+            }
+        }
+        AttributeControlLabelFont {
+            Lowres {
+	        Family <MS UI Gothic>
+	        Size <12>
+	        Style <normal>
+            }
+        }
+        CineControlFont {
+            Lowres {
+	        Family <Arial>
+	        Size <8>
+	        Style <normal>
+	    }
+        }
+        CineControlStrongFont {
+            Lowres {
+	        Family <Arial>
+	        Size <8>
+	        Style <bold>
+            }
+        }
+        DialogFont {
+            Lowres {
+	        Family <MS UI Gothic>
+	        Size <12>
+	        Style <normal>
+            }
+        }
+    }
+}
+
+#
+# Search dialog configuration.
+#
+
+SearchDialog {
+    # Configuration of the default search criteria. Valid settings are:
+    # patient_personal_id       Patient ID
+    # patient_name              Patient name
+    # patient_birthdate         Patient birthdate
+    # exam_request_id           Accession number (Request ID)
+    # exam_id                   Examination ID
+    # exam_referring_unit       Referring unit
+    # exam_referring_physician  Referring physician
+    # exam_exam_date_time       Date and time
+    # exam_ris_state            Status
+    # exam_age			Examination age
+    # exam_modality		Modality
+    # exam_station_name		Station name
+    # exam_institution_name     Institution name
+    DefaultSearchCriterion <patient_name>
+
+    # Maximum allowed number of hits in one search query.
+    MaxHits <50>
+
+    # The search scope decides which servers the search operation
+    # queries. Valid values for the scope is:
+    # primary    - Only the primary (or "home") WISE server is queried.
+    # enterprise - All WISE servers in the enterprise are queried.
+    SearchScope {
+        # Scope used when the viewer executes as an image viewer component,
+        # integrated with an external application (e.g. HIS or EPR) and
+        # the search cirteria is given by the external application.
+        # (Note: It is possible for the external application to specify
+        # another scope in the search criteria).
+        default_component_scope<primary>
+
+        # Default scope when the viewer executes in "stand alone" mode and
+        # the search criteria is entered by the user in the search dialog.
+        # This scope will always be used in standalone mode if the possibilty
+        # to change scope has been disabled for the user.
+        default_standalone_scope<primary>
+
+        # Valid values are:
+        # 0 - Do not allow the user to change scope of search.
+        # 1 - Allow the user to change scope of search in the search dialog.
+        allow_manual_selection<1>
+    }
+
+    # Configuration of the columns in the search dialog's result list.
+    # "tag" specifies what examination attribute to show in the column.
+    # "width" specifies the width of the column in pixels.
+    # Possible values for "tag" are:
+    # patient_personal_id           Patient ID
+    # patient_name                  Patient name
+    # patient_sex                   Patient sex
+    # patient_birthdate             Patient birthdate
+    # patient_ris_id                The patients ID in the RIS
+    # exam_id                       Examination number
+    # exam_request_id               Request number
+    # exam_accession_number         Accession number
+    # exam_exam_date_time           Date and time
+    # exam_age			    Examination age
+    # exam_modality                 Modality
+    # exam_body_part_examined       Body part
+    # exam_station_name             Station name
+    # exam_physician_name           Physician name
+    # exam_institution_name         Institution
+    # exam_description              Description
+    # exam_exam_code                Exam code
+    # exam_ris_state                RIS state
+    # exam_referring_unit           Referring unit
+    # exam_referring_physician      Referring physician
+    SearchResultColumns {
+        1 {
+            tag <patient_personal_id>
+            width <100>
+        }
+        2 {
+            tag <patient_name>
+            width <184>
+        }
+        3 {
+            tag <exam_modality>
+            width <60>
+        }
+        4 {
+            tag <exam_body_part_examined>
+            width <100>
+        }
+        5 {
+            tag <exam_exam_date_time>
+            width <120>
+        }
+        6 {
+            tag <exam_ris_state>
+            width <70>
+        }
+    }
+
+    # Configuration of the primary and secondary sort columns. A column is
+    # given as the index into the above list of columns. The SortAscending
+    # configuration can be either 1 for ascending, or 0 for descending order.
+    PrimarySortColumn <2>
+    PrimarySortAscending <1>
+    SecondarySortColumn <5>
+    SecondarySortAscending <0>
+}
+
+#
+# Report dialog configuration.
+#
+
+ReportDialog {    
+    RequestList {
+        1 {
+            tag <patient_personal_id>
+            width <100>
+        }
+        2 {
+            tag <patient_name>
+            width <191>
+        }
+        3 {
+            tag <request_id>
+            width <120>
+        }
+        4 {
+            tag <exam_modality>
+            width <60>
+        }
+        5 {
+            tag <exam_body_part_examined>
+            width <100>
+        }
+        6 {
+            tag <exam_exam_date_time>
+            width <120>
+        }
+        7 {
+            tag <exam_ris_state>
+            width <80>
+        }
+    }
+    RequestView {
+        1 {
+            tag <request_question>
+        }
+        2 {
+            tag <request_anamnesis>
+        }
+        3 {
+            tag <request_referring_unit>
+        }
+    }
+    ReportView {
+        1 {
+            tag <report_text>
+        }
+        2 {
+            tag <report_date>
+        }
+        3 {
+            tag <report_doctor>
+        }
+        4 {
+            tag <report_all_signatures>
+        }
+    }
+}
+
+#
+# Viewer window configuration.
+#
+
+ViewerWindow {
+    PatientInformation {
+        1 {
+            tag <patient_personal_id>
+        }
+        2 {
+            tag <patient_name>
+        }
+    }
+    ExamListColumns {
+        1 {
+            tag <exam_modality>
+            width <60>
+        }
+        2 {
+            tag <exam_body_part_examined>
+            width <101>
+        }
+        3 {
+            tag <exam_exam_date_time>
+            width <120>
+        }
+    }
+    # Only one line of information is shown in the series information, but
+    # several DICOM tags might be search for information. If the tag in 1 is
+    # empty, the tag in 2 is checked, and so on. The first tag that have a
+    # value will be used.
+    SeriesLabel {
+        1 {
+            tag <[0008,103e,0,CS]>
+        }
+        2 {
+            tag <[0018,0024,0,CS]>
+        }
+    }
+}
+
+#
+# Image viewing configuration.
+#
+
+# Configuration of the default compression level when using lossy compression.
+# The compression is expressed as a percentage of the full code stream on the
+# server. Valid values are 1 to 100 percent.
+compression {
+    # Default settings.
+    default {
+        name <Default>
+        step1 <10>
+        step2 <30>
+        warn <1>
+        throughput <57>
+    }
+
+    # Network types displayed in the compression settings dialog.
+    network_types {
+        1 {
+            # 128Kbps - 1.5Mbps
+            name <DSL (256 kb/s)>
+            step1 <5>
+            step2 <15>
+            warn <1>
+            throughput <30>
+        }
+        2 {
+            # 128Kbps - 1.544Mbps
+            name <T1 line (512 kb/s)>
+            step1 <10>
+            step2 <30>
+            warn <1>
+            throughput <57>
+        }
+        3 {
+            # 512Kbps - 9Mbps
+            name <Cable modem (1.5 Mb/s)>
+            step1 <20>
+            step2 <50>
+            warn <1>
+            throughput <128>
+        }
+        4 {
+            # 512Kbps - 9Mbps
+            name <Cable modem (5 Mb/s)>
+            step1 <30>
+            step2 <50>
+            warn <0>
+            throughput <164>
+        }
+        5 {
+            # 10Mbps - 1Gbps
+            name <Local area network (10 Mb/s)>
+            step1 <0>
+            step2 <50>
+            warn <0>
+            throughput <328>
+        }
+    }
+}
+
+# Stack navigation settings.
+# The weel_wrap_around setting controls whether it is possible to scroll a
+# stack beyond the last slice using the mouse wheel, thus getting to the
+# beginning of the stack. Valid settings are 0 and 1 for on or off.
+# The traverse_mode_config controls the navigation for synchronized stacks.
+# The valid values are as follows:
+# 0 - Only use slice number as traverse mode.
+# 1 - Use slice number and table position as traverse modes.
+# 2 - Use slice number, table position and 3D position as traverse modes.
+stack_navigation {
+    wheel_wrap_around <0>
+    traverse_mode_config <2>
+}
+
+# Configuration of whether every slice in the stack should be shown when
+# scrolling with the mouse. Valid settings are:
+# 0 - Allow skipping some slices to be able to browse the stack fast.
+# 1 - Ensure that each slice is shown, even if the mouse wheel is moved fast.
+stack_config {
+    force_display_of_every_slice <1>
+}
+
+# Threaded image operations in the imaging pipelines.
+pipe_threads {
+    enable <1>
+}
+
+# Emulate hardware video adapter. Can be used on workstations lacking
+# DirectX support to reduce caching and therefore enable viewing of 
+# large stacks. To disable this feature, set this to 0.
+emulate_hardware_adapter {
+    enable <0>
+}
+
+# The maximum amount of memory that can be allocated for an image.
+# This will determine how far in an image can be zoomed.
+image_view {
+    max_image_size <64000000>
+}
+
+# Configuration of streamed image preloading.
+# The enable value controls if stream preload is used, valid settings are
+# 1 (enabled) and 0 (disabled).
+# The preload_window controls how many images before and after the currently
+# visible image(s) in a stack that should be preloaded.
+# The preload_batch setting controls how many preload requests that must occur
+# before the query is sent to the server. Valid settings are positive integers,
+# and typically the preload_batch should be less than the preload_window.
+# The preload_cine_batch controls how many images that are preloaded in each
+# call when starting a cine loop. (The entire stack is preloaded, but in
+# batches of the configured size.)
+# The preload_cine_extra_time_factor can be used to tweak the initial cine loop
+# rate, but should not be changed without a good reason. The goal is to give
+# the preload thread enough time to preload the next batch before it gets
+# "caught up" by the cine loop. A higher value gives more time to the thread
+# by slowing the cine loop during the first revolution.
+stream_preload {
+    enable <1>
+    preload_window <16>
+    preload_batch <8>
+    preload_cine_batch <24>
+    preload_cine_extra_time_factor <0.64>
+}
+
+# Misc. overlay configuration.
+overlay {
+    result_offset <20>
+    click_threshhold <20>
+}
+
+# Pan overlay configuration.
+pan_overlay {
+    stack_increment <10>
+}
+
+# Configuration of scout image default visibility.
+scout_overlay {
+    show <1>
+}
+
+# Maual calibration warning position configuration.
+calibration_overlay {
+    default_position <0.5:0.5>
+}
+
+# Magnifying glass configuration.
+magnifying_glass {
+    size <100>         # Width and height of the window in pixels.
+    zoom_factor <2.0>  # Initial zoom factor.
+}
+
+# Cine tool configuration. If the configuration is set to 0 the cine tool will
+# be shown minimized when running a cine loop. If set to 1, it will be shown
+# in the normal way.
+cine_tool {
+    configuration <1>
+}
+
+# Configuration of size and position of tool controls. Tool controls are 
+# small windows connected to an image view. When clicking in a tool control,
+# its corresponding tool is activated for mouse input, e.g. window/level.
+#
+# Description of the settings:
+# size:         The size (in pixels) of the tool control windows.
+#               The minimum value is 60.
+# side:         Which side of the image view the tool controls should be 
+#               placed at. Valid values: left, right, top, bottom
+# side_offset:  The tool controls will be placed at this distance (in pixels) 
+#               from the side of the image view 
+imview_tool_controls {
+    lowres {
+        size <60>
+        side <right>
+        side_offset <30>
+    }
+
+    # Configuration of whether tool controls should be shown automatically (1)
+    # or not (0) on a Tablet PC. This behavior can still be changed using the
+    # commands in the View menu - this configuration just affects the default.
+    autoshow_on_tablet_pc {
+        scroll_control <1>
+        wl_control <1>
+        zoom_control <1>
+    }
+}
+
+# Edge enhancement configuration.
+# Description of the settings:
+# edge_level: The amount of edge enhancement to use, in percent. The default
+#             value is 500%.
+# precompute: If set to 1, edge enhancement for stack slices will be computed
+#             in advance. If set to 0, each slice will be computed when needed.
+imview_config {
+    edge_level <500>
+    precompute <0>
+}
+
+# Various display configuration.
+# Description of the settings:
+# show_annot:      If set to 1, overlays will be automatically shown by
+#                  default. If set to 0, they will be hidden, but can be
+#                  shown using the "Show annotations" command.
+display_settings_config {
+    show_annot <1>
+}
+
+# Pixel value display
+# Description of the settings:
+# show: If set to 1, the pixel value will be shown next to the 
+#       pointer. If set to 0, it will be hidden
+pixel_value_display {
+    show <0>
+}
+
+#
+# Misc config.
+#
+
+# Configure idle logout time.
+idle_logout {
+     idle_timeout <15> # minutes
+}
+
+
+# Printer configuration.
+# resolution:             Resolution of printed page.
+# use_image_aspect_ratio: If 1, print parts with the images' aspect ratio.
+#                         If 0 prints to fill the whole page. This option
+#                         (if set to 1) saves printer toner without reducing 
+#                         the images' sizes.
+# white_background:       If set to 1, prints images with white background.
+#                         This saves printer toner but might also reduce 
+#                         visibility of text overlays.
+# part_separators:        If 1 prints white lines between parts
+# header:                 Header on each printed page.
+#       Text:             Header text.
+#       Font:             Name of font family.
+#       Fontsize:         small, medium or large.
+#       Fontstyle:        normal, slanted, bold or bold-slanted.
+#       Alignment:        left, center or right
+# footer:                 Footer text is overridden by disclaimer.
+print_config {
+     resolution <1500>
+        
+     use_image_aspect_ratio <1>
+     white_background <0>
+     part_separators <1>
+
+#     header {
+#        Text <This is the page header...>
+#        Font <helvetica>
+#        Fontsize <medium>
+#        Fontstyle <bold>
+#        Alignment <left>       
+#     }
+#     footer {
+#        Text <and this is the footer.>
+#        Font <helvetica>
+#        Fontsize <medium>
+#        Fontstyle <bold>
+#        Alignment <right>       
+#     }
+
+}
+
+# 
+# 
+# Configure if additional image windows should be closed or remain visible
+# when a report presentation is applied. 
+#
+# Only the main window of the viewer is used to display report presentations, why it might be 
+# convenient to close extra image windows. However, these can be useful in addition to the 
+# presentation. To have the additional image windows closed when a report presentation is applied, 
+# the setting close_on_report_presentation should be set to <1>. To have them opened, the setting
+# should be <0>.
+#
+image_window_config { 
+    close_on_report_presentation <1> 
+}

@@ -1,0 +1,574 @@
+#
+# Configuration file for DICOM viewer commands.
+#
+# Do not change files in the config/config directory. These are default template files.
+# If you want to edit a configuration file, copy the default template file from the config/config
+# directory to the config/local_config directory and modify the file copy.
+#
+# Please note that it is required to test any configuration changes. This is done by:
+#
+# 1. Export an examination and the DICOM viewer to a disk location.  
+# 2. Run the viewer from the disk location and verify that the changes have taken effect.
+#
+# If the viewer doesn't start properly it is likely that the changes to the configuration 
+# file were made incorrectly.
+# To remedy such problems, remove the modified file from the config/local_config directory.
+#
+# If the default template files are corrupted, remove the entire config directory 
+# including sub folders "config" and "local_config". 
+# The folder structure will be re-created during the next export from IDS7.
+# 
+
+#
+# Command definitions.
+#
+Commands {
+    search {
+        Library <viewer_commands.dll>		
+        Factory_name <create_search_cmd>	
+        Label <Search...>
+        ToolbarLabel <Search>
+        Tips <Search for cases to view>
+        AcceleratorKey <f>
+        AcceleratorModifier <SI_CTRL>
+        AcceleratorLabel <Ctrl+f>
+        Pixmap <toolbar\search.bmp>
+        PixmapHigh <toolbar\high\search.bmp>
+    }
+    reports {
+        Library <viewer_commands.dll>
+        Factory_name <create_reports_cmd>
+        Label <Show reports...>
+        ToolbarLabel <Reports>
+        Tips <Show requests, scanned documents and reports>
+        Pixmap <toolbar\documents.bmp>
+        PixmapHigh <toolbar\high\documents.bmp>
+    }
+    next_monitor {
+        Library <viewer_commands.dll>		
+        Factory_name <create_next_monitor_cmd>	
+        Label <Next monitor>
+        ToolbarLabel <Next>
+        Tips <Show the next monitor in the presentation>
+        AcceleratorKey <SI_KP_0>
+        AcceleratorLabel <NUM 0>
+        Pixmap <toolbar\next_pres_monitor.bmp>
+        PixmapHigh <toolbar\high\next_pres_monitor.bmp>
+    }
+    previous_monitor {
+        Library <viewer_commands.dll>		
+        Factory_name <create_previous_monitor_cmd>	
+        Label <Previous monitor>
+        ToolbarLabel <Previous>
+        Tips <Show the previous monitor in the presentation>
+        AcceleratorKey <SI_KP_COMMA>
+        AcceleratorLabel <NUM ,>
+        Pixmap <toolbar\previous_pres_monitor.bmp>
+        PixmapHigh <toolbar\high\previous_pres_monitor.bmp>
+    }
+    reset_presentation {
+        Library <viewer_commands.dll>		
+        Factory_name <create_reset_presentation_cmd>	
+        Label <Reset presentation>
+        ToolbarLabel <Reset>
+        Tips <Reset any modifications to the presentation>
+        AcceleratorKey <r>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+r>
+        Pixmap <toolbar\reset_presentation.bmp>
+        PixmapHigh <toolbar\high\reset_presentation.bmp>
+    }
+    clear_presentation {
+        Library <viewer_commands.dll>		
+        Factory_name <create_clear_presentation_cmd>	
+        Label <Clear presentation>
+        ToolbarLabel <Clear>
+        Tips <Clear the current presentation>
+        Pixmap <toolbar\clear_presentation.bmp>
+        PixmapHigh <toolbar\high\clear_presentation.bmp>
+    }
+    viewer_partition_1_1 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <1 1>
+        Label <1x1>
+        ToolbarLabel <1x1>
+        Tips <1 by 1 partition>
+        AcceleratorKey <1>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+1>
+        Pixmap <toolbar\split_1x1.bmp>
+        PixmapHigh <toolbar\high\split_1x1.bmp>
+    }
+    viewer_partition_1_2 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <1 2>
+        Label <1x2>
+        ToolbarLabel <1x2>
+        Tips <1 by 2 partition>
+        AcceleratorKey <2>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+2>
+        Pixmap <toolbar\split_1x2.bmp>
+        PixmapHigh <toolbar\high\split_1x2.bmp>
+    }
+    viewer_partition_1_3 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <1 3>
+        Label <1x3>
+        ToolbarLabel <1x3>
+        Tips <1 by 3 partition>
+        AcceleratorKey <3>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+3>
+        Pixmap <toolbar\split_1x3.bmp>
+        PixmapHigh <toolbar\high\split_1x3.bmp>
+    }
+    viewer_partition_2_1 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <2 1>
+        Label <2x1>
+        ToolbarLabel <2x1>
+        Tips <2 by 1 partition>
+        Pixmap <toolbar\split_2x1.bmp>
+        PixmapHigh <toolbar\high\split_2x1.bmp>
+    }
+    viewer_partition_2_2 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <2 2>
+        Label <2x2>
+        ToolbarLabel <2x2>
+        Tips <2 by 2 partition>
+        AcceleratorKey <4>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+4>
+        Pixmap <toolbar\split_2x2.bmp>
+        PixmapHigh <toolbar\high\split_2x2.bmp>
+    }
+    viewer_partition_2_3 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <2 3>
+        Label <2x3>
+        ToolbarLabel <2x3>
+        Tips <2 by 3 partition>
+        AcceleratorKey <6>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+6>
+        Pixmap <toolbar\split_2x3.bmp>
+        PixmapHigh <toolbar\high\split_2x3.bmp>
+    }
+    viewer_partition_3_1 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <3 1>
+        Label <3x1>
+        ToolbarLabel <3x1>
+        Tips <3 by 1 partition>
+        Pixmap <toolbar\split_3x1.bmp>
+        PixmapHigh <toolbar\high\split_3x1.bmp>
+    }
+    viewer_partition_3_2 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <3 2>
+        Label <3x2>
+        ToolbarLabel <3x2>
+        Tips <3 by 2 partition>
+        Pixmap <toolbar\split_3x2.bmp>
+        PixmapHigh <toolbar\high\split_3x2.bmp>
+    }
+    viewer_partition_3_3 {
+        Library <viewer_commands.dll>		
+        Factory_name <create_change_partition_cmd>	
+        Partition <3 3>
+        Label <3x3>
+        ToolbarLabel <3x3>
+        Tips <3 by 3 partition>
+        AcceleratorKey <9>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+9>
+        Pixmap <toolbar\split_3x3.bmp>
+        PixmapHigh <toolbar\high\split_3x3.bmp>
+    }
+    scroll_control_autoshow {
+        Library <viewer_commands.dll>		
+        Factory_name <create_scroll_gadget_autoshow_cmd>	
+        Label <Show scroll control>
+        ToolbarLabel <Scroll>
+        Tips <Automatically show the scroll control>
+        Pixmap <toolbar\scroll_control.bmp>
+        PixmapHigh <toolbar\high\scroll_control.bmp>
+    }
+    wl_control_autoshow {
+        Library <viewer_commands.dll>		
+        Factory_name <create_wl_gadget_autoshow_cmd>	
+        Label <Show W/L control>
+        ToolbarLabel <W/L>
+        Tips <Automatically show the window/level control>
+        Pixmap <toolbar\window_level.bmp>
+        PixmapHigh <toolbar\high\window_level.bmp>
+    }
+    zoom_control_autoshow {
+        Library <viewer_commands.dll>		
+        Factory_name <create_zoom_gadget_autoshow_cmd>	
+        Label <Show zoom control>
+        ToolbarLabel <Zoom>
+        Tips <Automatically show the zoom control>
+        Pixmap <toolbar\zoom.bmp>
+        PixmapHigh <toolbar\high\zoom.bmp>
+    }
+    all_controls_autoshow {
+        Library <viewer_commands.dll>		
+        Factory_name <create_all_gadgets_autoshow_cmd>	
+        Label <Show all controls>
+        ToolbarLabel <Show>
+        Tips <Automatically show all tool controls>
+        Pixmap <toolbar\show_tool_controls.bmp>
+        PixmapHigh <toolbar\high\show_tool_controls.bmp>
+    }
+    no_controls_autoshow {
+        Library <viewer_commands.dll>		
+        Factory_name <create_no_gadgets_autoshow_cmd>	
+        Label <Hide all controls>
+        ToolbarLabel <Hide>
+        Tips <Do not show any tool controls automatically>
+        Pixmap <toolbar\hide_tool_controls.bmp>
+        PixmapHigh <toolbar\high\hide_tool_controls.bmp>
+    }
+    refine_image {
+        Library <viewer_commands.dll>		
+        Factory_name <create_refine_image_cmd>	
+        Label <Refine image>
+        ToolbarLabel <Refine>
+        Tips <Refine the quality of the displayed image>
+        AcceleratorKey < >
+        AcceleratorModifier <SI_CTRL>
+        AcceleratorLabel <Ctrl+Space>
+        Pixmap <toolbar\refine_image.bmp>
+        PixmapHigh <toolbar\high\refine_image.bmp>
+    }
+    refine_stack {
+        Library <viewer_commands.dll>		
+        Factory_name <create_refine_stack_cmd>	
+        Label <Refine stack>
+        ToolbarLabel <Refine>
+        Tips <Refine the quality of all images in the displayed stack>
+        AcceleratorKey <s>
+        AcceleratorModifier <SI_CTRL>
+        AcceleratorLabel <Ctrl+s>
+        Pixmap <toolbar\refine_image.bmp>
+        PixmapHigh <toolbar\high\refine_image.bmp>
+    }
+    open_users_guide {
+        Library <viewer_commands.dll>		
+        Factory_name <create_launch_chm_cmd>	
+        Label <User's guide...>
+        ToolbarLabel <Help>
+        Tips <Open the user's guide>
+        AcceleratorKey <h>
+        AcceleratorModifier <SI_CTRL>
+        AcceleratorLabel <Ctrl+h>
+        Pixmap <toolbar\help.bmp>
+        PixmapHigh <toolbar\high\help.bmp>
+    }
+    configure_compression {
+        Library <viewer_commands.dll>
+        Factory_name <create_compression_config_cmd>
+        Label <Compression settings...>
+        ToolbarLabel <Compr>
+        Tips <Configure the image compression>
+        Pixmap <toolbar\options.bmp>
+        PixmapHigh <toolbar\high\options.bmp>
+    }
+    next_collection {
+        Library <viewer_commands.dll>
+        Factory_name <create_next_collection_cmd>
+        Label <Next series>
+        ToolbarLabel <Next>
+        Tips <Show the next series in the examination>
+        Pixmap <toolbar\fetch_right.bmp>
+        PixmapHigh <toolbar\high\fetch_right.bmp>
+        AcceleratorKey <SI_RIGHT>
+        AcceleratorLabel <KEY Right>
+    }
+    previous_collection {
+        Library <viewer_commands.dll>
+        Factory_name <create_previous_collection_cmd>
+        Label <Previous series>
+        ToolbarLabel <Previous>
+        Tips <Show the previous series in the examination>
+        Pixmap <toolbar\fetch_left.bmp>
+        PixmapHigh <toolbar\high\fetch_left.bmp>
+        AcceleratorKey <SI_LEFT>
+        AcceleratorLabel <KEY Left>
+    }
+    next_key_collection {
+        Library <viewer_commands.dll>
+        Factory_name <create_next_key_collection_cmd>
+        Label <Next key series>
+        ToolbarLabel <Next>
+        Tips <Show the next key image in the examination>
+        Pixmap <toolbar\key_image_right.bmp>
+        PixmapHigh <toolbar\high\key_image_right.bmp>
+        AcceleratorKey <SI_KP_6>
+        AcceleratorLabel <NUM 6>
+    }
+    previous_key_collection {
+        Library <viewer_commands.dll>
+        Factory_name <create_previous_key_collection_cmd>
+        Label <Previous key series>
+        ToolbarLabel <Previous>
+        Tips <Show the previous key image in the examination>
+        Pixmap <toolbar\key_image_left.bmp>
+        PixmapHigh <toolbar\high\key_image_left.bmp>
+        AcceleratorKey <SI_KP_4>
+        AcceleratorLabel <NUM 4>
+    }
+    viewer_reset_to_pstate {
+        Library <viewer_commands.dll>
+        Factory_name <create_reset_to_pstate_cmd>
+        Label <Apply presentation state>
+        ToolbarLabel<DICOM PS>
+        Tips <Get settings from a DICOM presentation state>
+        Pixmap <toolbar\select_presentation_state.bmp>
+        PixmapHigh <toolbar\high\select_presentation_state.bmp>
+        AcceleratorKey <a>
+        AcceleratorModifier <SI_CTRL>
+        AcceleratorLabel <Ctrl+a>
+    }
+    change_password {
+        Library <viewer_commands.dll>
+        Factory_name <create_change_password_cmd>
+        Label <Change password...>
+        ToolbarLabel <Change>
+        Tips <Change the password>
+        Pixmap <toolbar\change_password.bmp>
+        PixmapHigh <toolbar\high\change_password.bmp>
+    }
+    disable_hw_acceleration {
+        Library <viewer_commands.dll>
+        Factory_name <create_disable_hw_acceleration_cmd>
+        Label <Disable hardware acceleration>
+        ToolbarLabel <Disable>
+        Tips <Disable the use of hardware acceleration for image display>
+        Pixmap <toolbar\options.bmp>
+        PixmapHigh <toolbar\high\options.bmp>
+    }
+    show_exam_properties {
+        Library <viewer_commands.dll>
+        Factory_name <create_show_exam_properties_cmd>
+        Label <Examination properties...>
+        ToolbarLabel <Properties>
+        Tips <Show properties for the selected examination>
+        Pixmap <toolbar\options.bmp>
+        PixmapHigh <toolbar\high\options.bmp>
+    }
+    about_viewer {
+        Library <viewer_commands.dll>
+        Factory_name <create_about_viewer_cmd>
+        Label <About...>
+        Tips <What am I running?>
+        ToolbarLabel<About>
+        Pixmap <toolbar\about.bmp>
+        PixmapHigh <toolbar\high\about.bmp>
+    }
+    check_for_updates {
+        Library <viewer_commands.dll>
+        Factory_name <create_check_for_updates_cmd>
+        Label <Check for updates>
+        Tips <Go to the Image Viewer web site>
+        ToolbarLabel<Update>
+    }
+    open_file {
+        Library <viewer_commands.dll>
+        Factory_name <create_open_file_cmd>
+        Label <Open DICOM package...>
+        Tips <Open a DICOM package>
+        ToolbarLabel<Open>
+        Pixmap <toolbar\open.bmp>
+        PixmapHigh <toolbar\high\open.bmp>
+    }
+    full_screen {
+        Library <viewer_commands.dll>
+        Factory_name <create_full_screen_cmd>
+        Label <Full screen>
+        ToolbarLabel<Full>
+        Tips <Maximize the area used for image display>
+        Pixmap <toolbar\full_screen.bmp>
+        PixmapHigh <toolbar\high\full_screen.bmp>
+        AcceleratorKey <SI_F11>
+        AcceleratorLabel <F11>
+    }
+    network_test {
+        Library <viewer_commands.dll>
+        Factory_name <create_network_test_cmd>
+        Label <Network test...>
+        ToolbarLabel <Test>
+        Tips <Test the performance of the network>
+        Pixmap <toolbar\network_test.bmp>
+        PixmapHigh <toolbar\high\network_test.bmp>
+    }
+    zoom_im_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_zoom_im_cmd>
+        Label <Zoom_im>
+        ToolbarLabel <Zoom_im>
+        Tips <Zoom_im>
+        Pixmap <toolbar\zoom_cont.bmp>
+        PixmapHigh <toolbar\high\zoom_cont.bmp>	
+    }
+    pan_im_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_pan_im_cmd>
+        Label <Pan>
+        ToolbarLabel <Pan>
+        Tips <Pan>
+        Pixmap <toolbar\pan.bmp>
+        PixmapHigh <toolbar\high\pan.bmp>	
+    }
+    browse_im_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_browse_im_cmd>
+        Label <Browse>
+        ToolbarLabel <Browse>
+        Tips <Browse>
+        Pixmap <toolbar\browse.bmp>
+        PixmapHigh <toolbar\high\browse.bmp>	
+    }
+    window_level_im_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_window_level_im_cmd>
+        Label <Window/Level>
+        ToolbarLabel <Window/Level>
+        Tips <Window/Level>
+        Pixmap <toolbar\level.bmp>
+        PixmapHigh <toolbar\high\level.bmp>	
+    }
+    rotateV3D_im_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_rotateV3D_im_cmd>
+        Label <Rotate>
+        ToolbarLabel <Rotate>
+        Tips <Rotate>
+        Pixmap <toolbar\rotateV3D.bmp>
+        PixmapHigh <toolbar\high\rotateV3D.bmp>	
+    }
+    set_exam_state_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_set_exam_state_cmd>
+        Label <Set status>
+        ToolbarLabel <Set status>
+        Tips <Set status of the examination>
+        AcceleratorKey <s>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+s> 
+        Pixmap <toolbar\status.bmp>
+        PixmapHigh <toolbar\high\status.bmp>        
+     }
+    set_next_exam_state_cmd {
+        Library <viewer_commands.dll>
+        Factory_name <create_set_next_exam_state_cmd>
+        Label <Next status>
+        ToolbarLabel <Next status>
+        Tips <Set next status of the examination>
+        AcceleratorKey <n>
+        AcceleratorModifier <SI_CTRL:SI_SHIFT>
+        AcceleratorLabel <Ctrl+Shift+n> 
+        Pixmap <toolbar\next_status.bmp>
+        PixmapHigh <toolbar\high\next_status.bmp>       
+     }
+    viewer_print_image {
+        Library <viewer_commands.dll>
+        Factory_name <create_viewer_print_image_cmd>
+        Label <Print...>
+        ToolbarLabel<Print...>
+	Tips <Print image>
+        Pixmap <toolbar\print.bmp>
+        PixmapHigh <toolbar\high\print.bmp>
+    }
+    viewer_print_page {
+        Library <viewer_commands.dll>
+        Factory_name <create_viewer_print_page_cmd>
+        Label <Print page...>
+        ToolbarLabel<Print page...>
+	Tips <Print displayed images>
+        Pixmap <toolbar\print.bmp>
+        PixmapHigh <toolbar\high\print.bmp>
+    }
+    viewer_print_presentation {
+        Library <viewer_commands.dll>
+        Factory_name <create_viewer_print_presentation_cmd>
+        Label <Print...>
+        ToolbarLabel<Print...>
+	Tips <Print presentation>
+        Pixmap <toolbar\print.bmp>
+        PixmapHigh <toolbar\high\print.bmp>
+        AcceleratorKey <p>
+        AcceleratorModifier <SI_CTRL>
+        AcceleratorLabel <Ctrl+p>
+    }
+    viewer_copy_image {
+         Library <viewer_commands.dll>
+         Factory_name <create_viewer_copy_image_cmd>
+         Label <Copy to clipboard>
+         ToolbarLabel<Copy>
+         Tips <Copy image to clipboard>
+	 AcceleratorKey <c>
+         AcceleratorModifier <SI_CTRL>
+         AcceleratorLabel <Ctrl+c>
+         Pixmap <toolbar\copy.bmp>
+         PixmapHigh <toolbar\high\copy.bmp>
+    }
+    toggle_pixel_value_display {
+        Library <viewer_commands.dll>
+        Factory_name <create_toggle_pixel_value_cmd>
+        Label <Show pixel value>
+        ToolbarLabel<Pixel>
+        Tips <Show the value of the single pixel under the pointer>
+        Pixmap <toolbar\show_pixel_value.bmp>
+        PixmapHigh <toolbar\high\show_pixel_value.bmp>
+    } 
+    toggle_image_windows {
+        Library <viewer_commands.dll>
+        Factory_name <create_toggle_image_windows_cmd>
+        Label <Open image windows>
+        ToolbarLabel<Open>
+        Tips <Open or close additional image windows>
+        Pixmap <toolbar\image_window.bmp>
+        PixmapHigh <toolbar\high\image_window.bmp>
+        AcceleratorKey <SI_F12>
+        AcceleratorLabel <F12>
+    } 
+    viewer_import_images_exam {
+        Library <viewer_commands.dll>
+        Factory_name <create_viewer_import_images_exam_cmd>
+        Label <Import images to current exam...>
+        ToolbarLabel<Import images>
+	Tips <Import images to current exam>
+        Pixmap <toolbar\import_from_file.bmp>
+        PixmapHigh <toolbar\high\import_from_file.bmp>
+    } 
+    viewer_import_images_new_exam {
+        Library <viewer_commands.dll>
+        Factory_name <create_viewer_import_images_new_exam_cmd>
+        Label <Import images to new exam...>
+        ToolbarLabel<Import images>
+	Tips <Import images to new exam>
+        Pixmap <toolbar\import_from_file.bmp>
+        PixmapHigh <toolbar\high\import_from_file.bmp>
+    }  
+    viewer_import_images_new_patient {
+        Library <viewer_commands.dll>
+        Factory_name <create_viewer_import_images_new_patient_cmd>
+        Label <Import images to other patient...>
+        ToolbarLabel<Import images>
+	Tips <Import images to other patient>
+        Pixmap <toolbar\import_from_file.bmp>
+        PixmapHigh <toolbar\high\import_from_file.bmp>
+    }   
+}

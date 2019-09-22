@@ -1,0 +1,80 @@
+#
+# Configuration file for DICOM viewer resources.
+#
+# Do not change files in the config/config directory. These are default template files.
+# If you want to edit a configuration file, copy the default template file from the config/config
+# directory to the config/local_config directory and modify the file copy.
+#
+# Please note that it is required to test any configuration changes. This is done by:
+#
+# 1. Export an examination and the DICOM viewer to a disk location.  
+# 2. Run the viewer from the disk location and verify that the changes have taken effect.
+#
+# If the viewer doesn't start properly it is likely that the changes to the configuration 
+# file were made incorrectly.
+# To remedy such problems, remove the modified file from the config/local_config directory.
+#
+# If the default template files are corrupted, remove the entire config directory 
+# including sub folders "config" and "local_config". 
+# The folder structure will be re-created during the next export from IDS7.
+# 
+
+
+#
+# GUI definitions
+#
+
+gui {
+    #
+    # General look
+    #
+    gui_look <sectra_viewer>
+
+    #
+    # Automatic gui look selection based on the LANG variable. Should have the
+    # format prefix:look,prefix:look etc. If the LANG variable begins with
+    # the prefix, the corresponding look is automatically selected.
+    #
+    # This overrides the general look above.
+    #
+    lang_gui_look <pms_:philips_viewer,eclipsys_:eclipsys_viewer,mammo_:mammography_viewer>
+
+    #
+    # Specifics for the sectra look
+    #
+    sectra_viewer {
+        #
+        # RGB palette
+        #
+	palette <#004979:#4188be:#79a8cf:#accae8:#bdd8f0:#dc8642:#e8a36d:#fbcfaf>
+    }
+
+    #
+    # Specifics for the philips look
+    #
+    philips_viewer {
+        #
+        # RGB palette
+        #
+	palette <#004979:#4188be:#79a8cf:#accae8:#bdd8f0:#dc8642:#e8a36d:#fbcfaf>
+    }
+    #
+    # Specifics for the eclipsys look
+    #
+    eclipsys_viewer {
+        #
+        # RGB palette
+        #
+	palette <#004979:#4188be:#79a8cf:#accae8:#bdd8f0:#dc8642:#e8a36d:#fbcfaf>
+    }
+
+    #
+    # Specifics for the mammography look
+    #
+    mammography_viewer {
+        #
+        # RGB palette
+        #
+	palette <#004979:#4188be:#79a8cf:#accae8:#bdd8f0:#dc8642:#e8a36d:#fbcfaf>
+    }
+}

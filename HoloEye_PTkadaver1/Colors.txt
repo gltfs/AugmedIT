@@ -1,0 +1,7 @@
+Skull: wit/grijs
+Skin: Beige/lichtroze
+Fiducials: Oranje
+Anterior Fossa: Rood
+Infraorbital nerve: Geel
+Canalis opticus: Blauw
+Planning: Groen
