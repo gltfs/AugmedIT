@@ -1,38 +1,38 @@
 {
   "id" : "HoloEye_PTkadaver1_Set",
-  " entities" : [ 
+  "entities" : [ 
     {
-      "id" : "HoloEye_PTkadaver1_Skin",
+      "id" : "Local/HoloEye_PTkadaver1_Skin",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "HoloEye_PTkadaver1_Skull",
+      "id" : "Local/HoloEye_PTkadaver1_Skull",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "HoloEye_PTkadaver1_Planning",
+      "id" : "Local/HoloEye_PTkadaver1_Planning",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "HoloEye_PTkadaver1_Canalis Opticus",
+      "id" : "Local/HoloEye_PTkadaver1_Canalis Opticus",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "HoloEye_PTkadaver1_Fossa Anterior",
+      "id" : "Local/HoloEye_PTkadaver1_Fossa Anterior",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "HoloEye_PTkadaver1_N. Infraorbitalis",
+      "id" : "Local/HoloEye_PTkadaver1_N. Infraorbitalis",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "HoloEye_PTkadaver1_Fiducials",
+      "id" : "Local/HoloEye_PTkadaver1_Fiducials",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     } 
