@@ -1,0 +1,30 @@
+{
+  "id" : "HoloEye_PTkadaver1",
+  " entities" : [ 
+    {
+      "id" : "Point Cloud Example",
+      "pos" : "0,0,0",
+      "rot" : "0,0,0"
+    }, 
+    {
+      "id" : "Tom_Waving",
+      "pos" : "0,0,0",
+      "rot" : "0,0,0"
+    }, 
+    {
+      "id" : "Snowman",
+      "pos" : "0,0,0",
+      "rot" : "0,0,0"
+    }, 
+    {
+      "id" : "Turtle",
+      "pos" : "0,0,0",
+      "rot" : "0,0,0"
+    }, 
+    {
+      "id" : "Kadaster Meting 1 Azewijn",
+      "pos" : "0,0,0",
+      "rot" : "0,0,0"
+    } 
+  ]
+}
