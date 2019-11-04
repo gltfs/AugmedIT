@@ -1,5 +1,6 @@
 {
   "id" : "HoloEye_PTkadaver1_Set",
+  "locked" : "true",
   "entities" : [ 
     {
       "id" : "Local/HoloEye_PTkadaver1_Skin",
