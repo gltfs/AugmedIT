@@ -1,0 +1,16 @@
+{
+  "id" : "MedicinCabinet",
+  "locked" : "false",
+  "entities" : [ 
+    {
+      "id" : "Local/Balloon",
+      "pos" : "0,-0.5,0",
+      "rot" : "0,0,0"
+    }, 
+    {
+      "id" : "Local/Hip Replacement",
+      "pos" : "0.5,0,0",
+      "rot" : "0,0,0"
+    } 
+  ]
+}
