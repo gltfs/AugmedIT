@@ -4,7 +4,7 @@
   "entities" : [ 
     {
       "id" : "Local/HoloEye_PTkadaver1_Set",
-      "pos" : "-0.5,0,0",
+      "pos" : "0,0,0",
       "rot" : "0,0,0"
     } 
   ]
