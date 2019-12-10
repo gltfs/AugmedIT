@@ -16,41 +16,6 @@
       "id" : "Local/HoloEye_PTkadaver1_Planning",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
-    }, 
-    {
-      "id" : "Local/HoloEye_PTkadaver1_Orbitae",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
-    },
-    {
-      "id" : "Local/HoloEye_PTkadaver1_Fiducials",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
-    },
-    {
-      "id" : "Local/HoloEye_PTkadaver1_Canalis Opticus",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
-    }, 
-    {
-      "id" : "Local/HoloEye_PTkadaver1_Fossa Anterior",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
-    }, 
-    {
-      "id" : "Local/HoloEye_PTkadaver1_N. Infraorbitalis",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
-    }, 
-    {
-      "id" : "Local/HoloEye_PTkadaver1_Fiducials",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
-    },
-    {
-      "id" : "Local/HoloEye_PTkadaver1_Fossa Anterior",
-      "pos" : "0,0,0",
-      "rot" : "0,0,0"
     } 
     ]
 }
