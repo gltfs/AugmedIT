@@ -38,6 +38,11 @@
       "rot" : "0,0,0"
     }, 
     {
+      "id" : "Local/HoloEye_PTkadaver1_N. Infraorbitalis",
+      "pos" : "0,0,0",
+      "rot" : "0,0,0"
+    }, 
+    {
       "id" : "Local/HoloEye_PTkadaver1_Fiducials",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
