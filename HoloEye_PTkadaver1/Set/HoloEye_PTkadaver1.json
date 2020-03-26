@@ -9,43 +9,43 @@
       "isin" : ""
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Skull",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Skull",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skin"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Planning",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Planning",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skull"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Orbitae",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Orbitae",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skull"
     },
     {
-      "id" : "Local/HoloEye_PTkadaver1_Canalis Opticus",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Canalis Opticus",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skull"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Fossa Anterior",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Fossa Anterior",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skull"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_N. Infraorbitalis",
+      "id" : "Local/GE_HoloEye_PTkadaver1_N. Infraorbitalis",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skull"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Fiducials",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Fiducials",
       "pos" : "0,0,0",
       "rot" : "0,0,0",
       "isin" : "Local/GE_HoloEye_PTkadaver1_Skull"
