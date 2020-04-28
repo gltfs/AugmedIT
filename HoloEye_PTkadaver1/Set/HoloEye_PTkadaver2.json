@@ -3,17 +3,17 @@
   "locked" : "true",
   "entities" : [ 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Skin",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Skin",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Skull",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Skull",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     }, 
     {
-      "id" : "Local/HoloEye_PTkadaver1_Planning",
+      "id" : "Local/GE_HoloEye_PTkadaver1_Planning",
       "pos" : "0,0,0",
       "rot" : "0,0,0"
     } 
