@@ -1,0 +1,20 @@
+{
+    "asset": {
+        "version": "1.0",
+        "generator": "Somewhere from the internet",
+        "copyright": "2020 (c) AugmedIT BV"
+    },
+    "system" : "lefthandedZ",
+    "pixelResolution" : [256,256,256],
+    "pixelSpacing" : [0.00078125, 0.00078125, 0.00078125],
+    "volumeSize" : [0.2,0.2,0.2],
+    "offset": {
+        "translation": [0,0,0],
+        "rotation": [-0.5,0.5,0.5,0.5],
+        "scale": [1,1,1]
+    },
+    "buffer": {
+        "byteLength": 33554432,
+        "uri": "MonkeySkull.bin"
+    }
+}
