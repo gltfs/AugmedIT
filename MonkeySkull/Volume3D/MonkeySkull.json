@@ -10,6 +10,7 @@
     "pixelSpacing" : [0.00078125, 0.00078125, 0.00078125],
     "pixelSize" : "Ascii8",
     "pixelOrigin": "BottomLeft",
+    "volumeSize" : [0.2, 0.2, 0.2],
     "endian" : "LittleEndian",
     "offset": {
         "translation": [0,0,0],
