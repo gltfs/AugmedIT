@@ -4,10 +4,13 @@
         "generator": "Somewhere from the internet",
         "copyright": "2020 (c) AugmedIT BV"
     },
-    "system" : "lefthandedZ",
+    "coordinateSystem" : "RHA",
+    "frameOfReferenceUID" : "",
     "pixelResolution" : [256,256,256],
     "pixelSpacing" : [0.00078125, 0.00078125, 0.00078125],
-    "volumeSize" : [0.2,0.2,0.2],
+    "pixelSize" : "int8",
+    "pixelOrigin": "BottomLeft",
+    "endian" : "LittleEndian",
     "offset": {
         "translation": [0,0,0],
         "rotation": [-0.5,0.5,0.5,0.5],
