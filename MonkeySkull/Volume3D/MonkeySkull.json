@@ -8,7 +8,7 @@
     "frameOfReferenceUID" : "",
     "pixelResolution" : [256,256,256],
     "pixelSpacing" : [0.00078125, 0.00078125, 0.00078125],
-    "pixelSize" : "int8",
+    "pixelSize" : "Ascii8",
     "pixelOrigin": "BottomLeft",
     "endian" : "LittleEndian",
     "offset": {
