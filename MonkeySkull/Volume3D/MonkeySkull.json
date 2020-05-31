@@ -4,7 +4,7 @@
         "generator": "Somewhere from the internet",
         "copyright": "2020 (c) AugmedIT BV"
     },
-    "coordinateSystem" : "RHA",
+    "coordinateSystem" : "LPH",
     "frameOfReferenceUID" : "",
     "pixelResolution" : [256,256,256],
     "pixelSpacing" : [0.00078125, 0.00078125, 0.00078125],
@@ -14,7 +14,7 @@
     "endian" : "LittleEndian",
     "offset": {
         "translation": [0,0,0],
-        "rotation": [-0.5,0.5,0.5,0.5],
+        "rotation": [0,0,0,0],
         "scale": [1,1,1]
     },
     "buffer": {
