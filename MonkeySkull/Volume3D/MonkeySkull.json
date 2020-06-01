@@ -16,7 +16,7 @@
         "translation": [0,0,0],
         "rotation": [-0.5,0.5,0.5,0.5],
         "rotationXDir": [-1,0,0],
-        "rotationYDir": [0,0,-1],
+        "rotationYDir": [0,0,1],
         "scale": [1,1,1]
     },
     "buffer": {
