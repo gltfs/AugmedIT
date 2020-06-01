@@ -14,8 +14,7 @@
     "endian" : "LittleEndian",
     "offset": {
         "translation": [0,0,0],
-        "rotationXDir" : [1,0,0],
-        "rotationYDir" : [0,1,0],
+        "rotation": [0,0,0,1],
         "scale": [1,1,1]
     },
     "buffer": {
