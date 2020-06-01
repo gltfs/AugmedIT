@@ -15,7 +15,7 @@
     "offset": {
         "translation": [0,0,0],
         "rotationXDir" : [1,0,0],
-        "rotationYDir" : [0,-1,0],
+        "rotationYDir" : [0,1,0],
         "scale": [1,1,1]
     },
     "buffer": {
