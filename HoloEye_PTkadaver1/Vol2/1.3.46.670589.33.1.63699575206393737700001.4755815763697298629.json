@@ -8,7 +8,7 @@
     "frameOfReferenceUID" : "",
     "pixelResolution" : [512,512,209],
     "pixelSpacing" : [0.00048828, 0.00048828, 0.001],
-    "pixelSize" : "Alpha12",
+    "pixelSize" : "Alpha16",
     "pixelOrigin": "TopLeft",
     "volumeSize" : [0.25, 0.25, 0.209],
     "endian" : "LittleEndian",
