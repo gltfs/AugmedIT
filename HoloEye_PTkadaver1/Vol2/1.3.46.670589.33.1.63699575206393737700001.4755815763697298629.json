@@ -4,7 +4,7 @@
         "generator": "Somewhere from the internet",
         "copyright": "2020 (c) AugmedIT BV"
     },
-    "coordinateSystem" : "LPA",
+    "coordinateSystem" : "LPH",
     "frameOfReferenceUID" : "",
     "pixelResolution" : [512,512,209],
     "pixelSpacing" : [0.00048828, 0.00048828, 0.001],
