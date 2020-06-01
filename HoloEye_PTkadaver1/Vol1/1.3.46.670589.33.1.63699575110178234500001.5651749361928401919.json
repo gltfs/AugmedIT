@@ -1,7 +1,7 @@
 {
     "asset": {
         "version": "1.0",
-        "generator": "AugmedIT DICOM to Volume convertor, V1",
+        "generator": "Augmedit DICOM to Volume convertor, V1",
         "copyright": "2020 (c) AugmedIT BV"
     },
     "coordinateSystem" : "LPH",
