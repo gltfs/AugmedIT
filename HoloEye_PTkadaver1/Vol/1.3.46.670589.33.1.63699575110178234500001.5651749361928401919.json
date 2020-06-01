@@ -1,7 +1,7 @@
 {
     "asset": {
         "version": "1.0",
-        "generator": "Somewhere from the internet",
+        "generator": "AugmedIT DICOM to Volume convertor, V1",
         "copyright": "2020 (c) AugmedIT BV"
     },
     "coordinateSystem" : "LPA",
@@ -19,6 +19,6 @@
     },
     "buffer": {
         "byteLength": 109576192,
-        "uri": "C:\\Users\\tomm\\Dropbox\\Source\\AugStore\\AugStore\\HoloEye_PTkadaver1\\Vol2\\1.3.46.670589.33.1.63699575206393737700001.4755815763697298629.bin"
+        "uri": "C:\\Users\\tomm\\Dropbox\\Source\\AugStore\\AugStore\\HoloEye_PTkadaver1\\Vol1\\1.3.46.670589.33.1.63699575110178234500001.5651749361928401919.bin"
     }
 }
