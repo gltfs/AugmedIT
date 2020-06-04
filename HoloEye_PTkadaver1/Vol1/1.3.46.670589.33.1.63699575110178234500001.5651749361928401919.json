@@ -11,9 +11,9 @@
     "pixelSize" : "Alpha12",
     "pixelOrigin": "TopLeft",
     "volumeSize" : [0.25, 0.25, 0.209],
-    "endian" : "LittleEndian",
+    "byteOrder" : "LittleEndian",
     "offset": {
-        "translation": [0,0,0],
+        "translation": [-0.125,0.0071,0.99055],
         "rotationXDir": [1,0,0],
         "rotationYDir": [0,1,0],
         "scale": [1,1,1]
