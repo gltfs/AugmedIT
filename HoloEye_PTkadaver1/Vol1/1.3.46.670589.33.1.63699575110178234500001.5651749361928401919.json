@@ -4,7 +4,7 @@
         "generator": "Augmedit DICOM to Volume convertor, V1",
         "copyright": "2020 (c) AugmedIT BV"
     },
-    "coordinateSystem" : "LBU",
+    "coordinateSystem" : "LeftBackUp",
     "frameOfReferenceUID" : "",
     "pixelResolution" : [512,512,209],
     "pixelSpacing" : [0.00048828, 0.00048828, 0.001],
