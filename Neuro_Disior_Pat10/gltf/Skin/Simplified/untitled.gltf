@@ -1,0 +1,88 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "skin Simplified"
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "skin Simplified.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 59910,
+            "max" : [
+                255.49932861328125,
+                150.8182830810547,
+                1.8474210037311423e-06
+            ],
+            "min" : [
+                -1.6869825003595906e-06,
+                -0.055516235530376434,
+                -255.49183654785156
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 59910,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 59910,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 718920,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 718920,
+            "byteOffset" : 718920
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 119820,
+            "byteOffset" : 1437840
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1557660,
+            "uri" : "untitled.bin"
+        }
+    ]
+}

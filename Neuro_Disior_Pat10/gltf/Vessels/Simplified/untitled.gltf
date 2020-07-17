@@ -1,0 +1,88 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "vessels Simplified"
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "vessels Simplified",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 59298,
+            "max" : [
+                192.8104705810547,
+                131.87440490722656,
+                -50.10059356689453
+            ],
+            "min" : [
+                62.4079475402832,
+                12.308355331420898,
+                -211.1786651611328
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 59298,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 59298,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 711576,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 711576,
+            "byteOffset" : 711576
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 118596,
+            "byteOffset" : 1423152
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1541748,
+            "uri" : "untitled.bin"
+        }
+    ]
+}
