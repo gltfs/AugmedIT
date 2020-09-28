@@ -14,15 +14,15 @@
   "pixelSpacing": [
     0.00095833331346511,
     0.00095833331346511,
-    0.0005577647058823529
+    0.0012
   ],
   "pixelSize": "Alpha12",
-  "pixelWindow": [0,770],
+  "pixelWindow": [-264,978],
   "pixelOrigin": "TopLeft",
   "volumeSize": [
     0.2299999952316264,
     0.2299999952316264,
-    0.14223
+    0.306
   ],
   "byteOrder": "LittleEndian",
   "offset": {
