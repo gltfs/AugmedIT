@@ -1,5 +1,6 @@
 {
     "asset": {
+        "type" : "Volume",        
         "version": "1.0",
         "generator": "Augmedit DICOM to Volume convertor, V1",
         "copyright": "2020 (c) AugmedIT BV"
@@ -13,7 +14,7 @@
     "volumeSize" : [0.25, 0.25, 0.209],
     "byteOrder" : "LittleEndian",
     "offset": {
-        "translation": [-0.125,0.0071,0.99055],
+        "position": [-0.125,0.0071,0.99055],
         "rotationXDir": [1,0,0],
         "rotationYDir": [0,1,0],
         "scale": [1,1,1]
