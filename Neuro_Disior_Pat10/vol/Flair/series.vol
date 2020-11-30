@@ -3,7 +3,7 @@
     "type": "Volume",
     "version": "1.0",
     "generator": "AugmedIT DICOM to Volume convertor, V1",
-    "creationDateTime": "2020-07-17T15:19:26.5306547+00:00"
+    "creationDateTime": "2020-10-11T11:45:25.3278765+00:00"
   },
   "coordinateSystem": "LeftBackUp",
   "pixelResolution": [
@@ -14,15 +14,18 @@
   "pixelSpacing": [
     0.00095833331346511,
     0.00095833331346511,
-    0.0005577647058823529
+    0.0005577710918351706
   ],
   "pixelSize": "Alpha12",
-  "pixelWindow": [0,2293],
   "pixelOrigin": "TopLeft",
+  "pixelWindow": [
+    46.5,
+    667.5
+  ],
   "volumeSize": [
     0.2299999952316264,
     0.2299999952316264,
-    0.14223
+    0.1422316284179685
   ],
   "byteOrder": "LittleEndian",
   "offset": {
